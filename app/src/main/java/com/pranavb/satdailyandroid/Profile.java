@@ -39,44 +39,7 @@ public class Profile extends AppCompatActivity {
     }
 
     public String predictScore() {
-        SharedPreferences pref = this.getSharedPreferences("scores", MODE_PRIVATE);
-        int accur = ((Integer.parseInt((pref.getString("correct", null)))) * 100) / (Integer.parseInt((pref.getString("correct", null))) + Integer.parseInt((pref.getString("incorrect", null))));
-        String predict = "";
-        if (accur <= 20) {
-            predict = "≤ 1000";
-        } else if (accur <= 25) {
-            predict = "≈ 1050";
-        } else if (accur <= 30) {
-            predict = "≈ 1100";
-        } else if (accur <= 35) {
-            predict = "≈ 1150";
-        } else if (accur <= 40) {
-            predict = "≈ 1200";
-        } else if (accur <= 45) {
-            predict = "≈ 1220";
-        } else if (accur <= 50) {
-            predict = "≈ 1250";
-        } else if (accur <= 55) {
-            predict = "≈ 1310";
-        } else if (accur <= 60) {
-            predict = "≈ 1330";
-        } else if (accur <= 64) {
-            predict = "≈ 1360";
-        } else if (accur <= 70) {
-            predict = "≈ 1420";
-        } else if (accur <= 75) {
-            predict = "≈ 1430";
-        } else if (accur <= 80) {
-            predict = "≈ 1460";
-        } else if (accur <= 85) {
-            predict = "≈ 1500";
-        } else if (accur <= 90) {
-            predict = "≈ 1550";
-        } else if (accur <= 95) {
-            predict = "≈ 1570";
-        } else if (accur <= 100) {
-            predict = "≈ 1600";
-        }
+        // Redacted
         return predict;
     }
 }
