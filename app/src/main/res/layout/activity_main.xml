@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="23dp"
+        android:divider="@drawable/divider"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="216dp"
+            android:layout_height="156dp"
+            app:srcCompat="@drawable/appicon_2" />
+
+        <Button
+            android:id="@+id/todays"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:text="Today's Questions"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/pastquestions"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:text="Past Questions"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:text="My Profile"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/other"
+            android:layout_width="225dp"
+            android:layout_height="55dp"
+            android:text="Other"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
